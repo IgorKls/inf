@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информационная безопасность</title>
+    <link rel="stylesheet" href="res/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <ul class="list">
+                <li class="list__item">
+                   <a href="index.html">Учебник</a>
+                </li>
+                <li class="list__item">
+                    <a href="test.html">Тест</a>
+                </li>
+                <li class="list__item">
+                    <a href="autors.html">Авторы</a>
+                </li>
+                <li class="list__item">
+                    <a href="sources.html">Источники</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="page">
+            <p class="title">
+                Тест
+            </p>
+            <form class="test" name="test" id="test" action="check();">
+                <div class="col">
+                    <h4>1) Наиболее распространены угрозы информационной безопасности сети:</h4>
+                    <input name="q1" value="1" id="value1" type="radio"> кража информации <br>
+                    <input name="q1" value="0" id="value2" type="radio"> халатность сотрудников <br>
+                    <input name="q1" value="0" id="value3" type="radio"> вредоностные <br>
+
+                    <h4>2) Цели информационной безопасности – своевременное обнаружение, предупреждение: </h4>
+                    <input name="q2" value="0" id="value1" type="radio"> инсайдерства в организации <br>
+                    <input name="q2" value="1" id="value2" type="radio"> несанкционированного доступа, воздействия в сети <br>
+                    <input name="q2" value="0" id="value3" type="radio"> чрезвычайных ситуаций <br>
+
+                    <h4>3) Основные объекты информационной безопасности: </h4>
+                    <input name="q3" value="0" id="value1" type="radio"> бизнес-ориентированные, коммерческие системы <br>
+                    <input name="q3" value="0" id="value2" type="radio"> информационные системы, психологическое состояние пользователей <br>
+                    <input name="q3" value="1" id="value3" type="radio"> компьютерные сети, базы данных <br>
+
+                    <h4>4) Основными рисками информационной безопасности являются: </h4>
+                    <input name="q4" value="1" id="value1" type="radio"> потеря, искажение, утечка информации <br>
+                    <input name="q4" value="0" id="value2" type="radio"> техническое вмешательство, выведение из строя оборудования сети <br>
+                    <input name="q4" value="0" id="value3" type="radio"> искажение, уменьшение объема, перекодировка информации <br>
+
+                    <h4>5) Основными субъектами информационной безопасности являются: </h4>
+                    <input name="q5" value="0" id="value1" type="radio"> сетевые базы данных, фаерволлы <br>
+                    <input name="q5" value="1" id="value2" type="radio"> органы права, государства, бизнеса <br>
+                    <input name="q5" value="0" id="value3" type="radio"> руководители, менеджеры, администраторы компаний <br>
+                    
+                </div>
+
+                <div class="col">
+                    <h4>6) К основным функциям системы безопасности можно отнести все перечисленное: </h4>
+                    <input name="q6" value="0" id="value1" type="radio"> установка новых офисных приложений, смена хостинг-компании <br>
+                    <input name="q6" value="0" id="value2" type="radio"> внедрение аутентификации, проверки контактных данных пользователей <br>
+                    <input name="q6" value="1" id="value3" type="radio"> установление регламента, аудит системы, выявление рисков <br>
+
+                    <h4>7) К основным типам средств воздействия на компьютерную сеть относится: </h4>
+                    <input name="q7" value="1" id="value1" type="radio"> логические закладки («мины») <br>
+                    <input name="q7" value="0" id="value2" type="radio"> компьютерный сбой <br>
+                    <input name="q7" value="0" id="value3" type="radio"> аварийное отключение питания <br>
+
+                    <h4>8) Когда получен спам по e-mail с приложенным файлом, следует: </h4>
+                    <input name="q8" value="0" id="value1" type="radio"> прочитать приложение, если оно не содержит ничего ценного – удалить <br>
+                    <input name="q8" value="1" id="value2" type="radio"> удалить письмо с приложением, не раскрывая (не читая) его <br>
+                    <input name="q8" value="0" id="value3" type="radio"> сохранить приложение в парке «Спам», выяснить затем IP-адрес генератора спама <br>
+                        
+                    <h4>9) Наиболее распространены угрозы информационной безопасности корпоративной системы: </h4> 
+                    <input name="q9" value="0" id="value1" type="radio"> покупка нелицензионного ПО <br>
+                    <input name="q9" value="0" id="value2" type="radio"> сознательного внедрения сетевых вирусов <br>
+                    <input name="q9" value="1" id="value3" type="radio"> ошибки эксплуатации и неумышленного изменения режима работы системы <br>
+
+                    <h4>10) Свойствами информации, наиболее актуальными при обеспечении информационной безопасности являются </h4>
+                    <input name="q10" value="1" id="value1" type="radio"> целостность <br>
+                    <input name="q10" value="0" id="value2" type="radio"> доступность <br>
+                    <input name="q10" value="0" id="value3" type="radio"> актуальность <br>
+                </div>
+            </form>
+            <input class="button" value="Посмотреть результат" type="button" id="submit" onclick="check()">
+        </div>
+    </main>
+
+
+
+
+    <script src="res/js/script.js"></script>
+</body>
+
+</html>
